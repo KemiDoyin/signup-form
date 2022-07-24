@@ -24,7 +24,6 @@ html {
     display: none;
 }
 body {
-    /* background-image: url(../src/assets/bg-intro-desktop.png); */
     background: url(../src/assets/bg-intro-desktop.png), var(--Red);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -35,11 +34,9 @@ body {
 }
 
 @media screen and (max-width:600px) {
-    body {
-        /* background-color: black; */
-    }
+    
     .container {
-        margin: 30px;
+        margin: 20px;
         padding: 10px;
     }
     .form__container {
@@ -52,24 +49,31 @@ body {
     .signup__container {
         width: 100%;
     }
+    .info h1 {
+        font-size: 30px;
+        text-align: center;
+    }
     .info p {
         text-align: center;
         line-height: 1.6;
-        font-size: 22px;
+        font-size: 21px;
         margin-top: 12px;
     }
-    .signup__container button {
-        font-size: 22px;
-        padding: 20px;
+    .btn__1 {
+        font-size: 17px;
+        padding: 24px;
         margin-top: 50px;
         width: 100%;
     }
-    .forms {
+    .signup__box {
         width: 100%;
         margin-top: 25px;
     }
-    .forms button {
+    .btn__2 {
         margin-top: 12px;
+        font-size: 15px;
+        padding: 17px;
+        width: 100%;
     }
 }
 

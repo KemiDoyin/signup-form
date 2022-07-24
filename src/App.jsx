@@ -1,10 +1,11 @@
 import React from 'react'
-import Form from './components/form/Form'
+import Signup from './components/form/Signup'
+
 
 const App = () => {
   return (
     <>  
-    <Form/>
+    <Signup/>
     </>
   )
 }

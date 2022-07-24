@@ -1,15 +1,13 @@
 .container {
-    margin: 85px
+    margin: 85px;
 }
 .form__container .info {
     width: 50%;
     color: rgb(236, 236, 243);
     margin: 120px 53px 0 0;
-    /* text-align: justify; */
 }
 .info h1 {
     font-size: 45px;
-    /* width: 520px; */
     font-weight: 900;
 }
 .info p {
@@ -20,7 +18,7 @@
 .signup__container {
     width: 50%;
 }
-.signup__container button {
+.btn__1 {
     background-color: var(--Blue);
     border: none;
     width: 90%;
@@ -31,24 +29,30 @@
     box-shadow: 0 6px  rgba(0, 0, 0, 0.3);
 }
 
+.btn__1:active {
+    transform: scale(.96);
+}
 .form__container {
     display: flex;
-    /* width: 250px; */
-    /* margin: 0 auto; */
-    /* margin: 55p */
 }
-.forms{
-    /* display: inline-block; */
+.signup__box{
     display: block;
     background-color: white;
     box-shadow: 0 6px  rgba(0, 0, 0, 0.3);
     padding: 30px;
     width: 90%;
     margin-top: 19px;
+    margin-bottom: 40px;
    border-radius: 12px;
 }
 
-.forms input {
+.signup__box .errors {
+    color: var(--Red);
+    text-align: end;
+    margin-bottom: 5px;
+}
+
+.signup__box input {
     border: 1px solid var(--Grayish-Blue);
     border-radius: 7px;
     padding: 19px;
@@ -56,12 +60,12 @@
     font-weight: bold;
     display: block;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
-.forms input:focus {
+.signup__box input:focus {
     border: 1px solid var(--Blue);
 }
-.forms button {
+.btn__2 {
     width: 100%;
     border: none;
     cursor: pointer;
@@ -76,19 +80,23 @@
     border: 2px solid rgba(0,0,0,0.3);
     box-shadow: 0 2px  rgba(0, 0, 0, 0.5);
 }
-.forms button:active {
+.btn__2:active {
     transform: scale(.96);
 }
-.forms p {
+.signup__box p {
     color: var(--Grayish-Blue);
     margin-top: 12px;
     font-size: 12px;
     text-align: center;
     font-weight: 600;
-    /* margin: 0 10px 0 12px; */
 }
 
-.forms p > span {
+.terms__and__services {
     color: var(--Red);
+}
+
+
+.signup__box input:invalid {
+    border-color: var(--Red);
 }
 
